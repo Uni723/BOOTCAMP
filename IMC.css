@@ -1,0 +1,145 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4faff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sexo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.sexo label {
+    position: relative;
+}
+
+.botao-sexo {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    color: #555;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="radio"]:checked + .botao-sexo.homem {
+    background-color: #007bff;
+    color: #fff;
+}
+
+input[type="radio"]:checked + .botao-sexo.mulher {
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.campo input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.campo input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.campo span {
+    margin-left: 10px;
+    color: #777;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.resultado {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #eaf6ff;
+    border: 1px solid #007bff;
+    color: #004a7f;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.detalhes {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.resultado span {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.detalhes strong {
+    color: #007bff;
+}
